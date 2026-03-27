@@ -1,0 +1,39 @@
+{
+  "cases": [
+    {
+      "case_id": "sample-001",
+      "documents": [
+        {
+          "id": "doc-001",
+          "title": "Complaint",
+          "text": "Plaintiff alleges employment discrimination and retaliation by a private employer."
+        },
+        {
+          "id": "doc-002",
+          "title": "Relief Requested",
+          "text": "Plaintiff seeks compensatory damages and injunctive relief."
+        }
+      ]
+    },
+    {
+      "case_id": "sample-002",
+      "documents": [
+        {
+          "id": "doc-003",
+          "title": "Civil Rights Filing",
+          "text": "Several individuals bring claims under federal civil rights law related to police conduct."
+        }
+      ]
+    },
+    {
+      "case_id": "sample-003",
+      "documents": [
+        {
+          "id": "doc-004",
+          "title": "Petition",
+          "text": "A nonprofit organization challenges a state agency policy and seeks declaratory relief."
+        }
+      ]
+    }
+  ]
+}
