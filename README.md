@@ -96,6 +96,14 @@ For party_type, the field is predicted_labels (multi-label) instead of predicted
 
 Run from repo root.
 
+Use `--output` (or `-o`) to save predictions to a file instead of printing to stdout.
+
+Pattern:
+
+```bash
+.venv/bin/python <script_name>.py -i sample_cases.json -o <output_file>.json --pretty
+```
+
 ### 1) Plaintiff Type
 
 ```bash
@@ -132,6 +140,15 @@ Example:
 
 ```bash
 .venv/bin/python predict_case_type.py -i sample_cases.json -o case_type_predictions.json --pretty
+```
+
+More examples:
+
+```bash
+.venv/bin/python predict_plaintiff_type.py -i sample_cases.json -o plaintiff_type_predictions.json --pretty
+.venv/bin/python predict_defendant_type.py -i sample_cases.json -o defendant_type_predictions.json --pretty
+.venv/bin/python predict_document_type.py -i sample_cases.json -o document_type_predictions.json --pretty
+.venv/bin/python predict_party_type.py -i sample_cases.json -o party_type_predictions.json --pretty
 ```
 
 ## Stdin/Stdout Example
