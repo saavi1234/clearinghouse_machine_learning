@@ -1,0 +1,70 @@
+=== Validation ===
+Micro F1: 0.7476
+Macro F1: 0.5181
+Subset Accuracy: 0.5379
+
+Per-class report:
+
+                                               precision    recall  f1-score   support
+
+                      Bank or credit provider       0.77      0.77      0.77        13
+                           College/University       0.79      0.81      0.80        27
+                                  Corrections       0.82      0.88      0.85       176
+                  Elementary/Secondary School       0.79      0.93      0.85        54
+                                         Fire       0.50      0.50      0.50         8
+                   Hospital/Health Department       0.59      0.82      0.69        62
+                            Housing Authority       0.67      0.75      0.71         8
+                                      Insurer       0.00      0.00      0.00         2
+                            Jurisdiction-wide       0.83      0.75      0.79       474
+                              Law-enforcement       0.59      0.81      0.68       154
+Movie Theater or Other Entertainment facility       0.00      0.00      0.00         2
+                Multi-family housing provider       0.38      0.83      0.53         6
+                                        Parks       0.00      0.00      0.00         2
+                                   Restaurant       1.00      0.33      0.50         3
+                                     Retailer       0.58      0.68      0.62        28
+                      Sanitation/Public Works       0.50      0.40      0.44         5
+               Single family housing provider       0.00      0.00      0.00         1
+                               Transportation       0.45      0.83      0.59        18
+
+                                    micro avg       0.71      0.79      0.75      1043
+                                    macro avg       0.51      0.56      0.52      1043
+                                 weighted avg       0.75      0.79      0.76      1043
+                                  samples avg       0.75      0.82      0.76      1043
+
+
+
+=== Test ===
+Micro F1: 0.7449
+Macro F1: 0.5518
+Subset Accuracy: 0.5336
+
+Per-class report:
+
+                                               precision    recall  f1-score   support
+
+                      Bank or credit provider       0.75      0.69      0.72        13
+                           College/University       0.64      0.67      0.65        27
+                                  Corrections       0.79      0.90      0.84       175
+                  Elementary/Secondary School       0.77      0.87      0.82        54
+                                         Fire       0.50      0.43      0.46         7
+                   Hospital/Health Department       0.60      0.86      0.71        63
+                            Housing Authority       0.62      0.62      0.62         8
+                                      Insurer       0.00      0.00      0.00         1
+                            Jurisdiction-wide       0.82      0.78      0.80       473
+                              Law-enforcement       0.55      0.86      0.67       154
+Movie Theater or Other Entertainment facility       0.06      0.67      0.12         3
+                Multi-family housing provider       0.45      0.83      0.59         6
+                                        Parks       1.00      0.33      0.50         3
+                                   Restaurant       0.33      0.50      0.40         2
+                                     Retailer       0.59      0.76      0.67        29
+                      Sanitation/Public Works       0.50      0.17      0.25         6
+               Single family housing provider       1.00      0.50      0.67         2
+                               Transportation       0.38      0.53      0.44        19
+
+                                    micro avg       0.70      0.80      0.74      1045
+                                    macro avg       0.58      0.61      0.55      1045
+                                 weighted avg       0.73      0.80      0.76      1045
+                                  samples avg       0.74      0.83      0.75      1045
+
+
+
