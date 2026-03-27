@@ -1,0 +1,19 @@
+                         precision    recall  f1-score   support
+
+Administrative tribunal     0.0000    0.0000    0.0000         2
+          Amicus Curiae     0.6779    0.7953    0.7319       254
+                  Court     0.9626    0.9452    0.9538      7048
+              Defendant     0.6210    0.8577    0.7204      2080
+   Defendant-Intervenor     0.4304    0.4658    0.4474        73
+                 Expert     0.3292    0.6092    0.4274        87
+               Mediator     0.0000    0.0000    0.0000         5
+         Monitor/Master     0.6108    0.8500    0.7108       240
+          Other/Unknown     0.2273    0.3750    0.2830        40
+              Plaintiff     0.8040    0.9043    0.8512      4359
+   Plaintiff-Intervenor     0.3821    0.6558    0.4829       215
+               Receiver     0.6000    0.9000    0.7200        20
+
+              micro avg     0.8142    0.9052    0.8572     14423
+              macro avg     0.4704    0.6132    0.5274     14423
+           weighted avg     0.8363    0.9052    0.8658     14423
+            samples avg     0.8561    0.9138    0.8711     14423
