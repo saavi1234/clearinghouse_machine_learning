@@ -57,7 +57,78 @@ Each document must include:
 - title (optional)
 - text (optional)
 
-Aggregated case-level text input is not supported.
+### Input JSON Examples
+
+Single case object:
+
+```json
+{
+	"case_id": "sample-001",
+	"documents": [
+		{
+			"id": "doc-001",
+			"title": "Complaint",
+			"text": "Plaintiff alleges breach of contract ..."
+		}
+	]
+}
+```
+
+List of case objects:
+
+```json
+[
+	{
+		"case_id": "sample-001",
+		"documents": [
+			{
+				"id": "doc-001",
+				"title": "Complaint",
+				"text": "Plaintiff alleges breach of contract ..."
+			}
+		]
+	},
+	{
+		"case_id": "sample-002",
+		"documents": [
+			{
+				"id": "doc-002",
+				"title": "Answer",
+				"text": "Defendant denies all material allegations ..."
+			}
+		]
+	}
+]
+```
+
+Object with top-level cases list:
+
+```json
+{
+	"cases": [
+		{
+			"case_id": "sample-001",
+			"documents": [
+				{
+					"id": "doc-001",
+					"title": "Complaint",
+					"text": "Plaintiff alleges breach of contract ..."
+				}
+			]
+		},
+		{
+			"case_id": "sample-002",
+			"documents": [
+				{
+					"id": "doc-002",
+					"title": "Answer",
+					"text": "Defendant denies all material allegations ..."
+				}
+			]
+		}
+	]
+}
+```
 
 ## Output Format
 
@@ -96,12 +167,10 @@ For party_type, the field is predicted_labels (multi-label) instead of predicted
 
 Run from repo root.
 
-Use `--output` (or `-o`) to save predictions to a file instead of printing to stdout.
-
 Pattern:
 
 ```bash
-.venv/bin/python <script_name>.py -i sample_cases.json -o <output_file>.json --pretty
+.venv/bin/python <script_name>.py -i <input_file>.json --pretty
 ```
 
 ### 1) Plaintiff Type
@@ -135,6 +204,14 @@ Pattern:
 ```
 
 ## Write Output to Files
+
+Use `--output` (or `-o`) to save predictions to a file instead of printing to stdout.
+
+Pattern:
+
+```bash
+.venv/bin/python <script_name>.py -i <input_file>.json -o <output_file>.json --pretty
+```
 
 Example:
 
